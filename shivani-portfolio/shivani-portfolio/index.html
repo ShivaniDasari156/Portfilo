@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ==========================================
+       SHIVANI DASARI - PERSONAL PORTFOLIO
+       Built from resume data | Dark Theme
+  ========================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dasari Shivani - MCA Graduate & Full-Stack Web Developer portfolio. Skilled in Python, Django, React, JavaScript and more." />
+  <meta name="keywords" content="Shivani Dasari, Full Stack Developer, Python, Django, React, Web Developer, MCA Graduate" />
+  <meta name="author" content="Dasari Shivani" />
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Shivani Dasari | Full-Stack Developer" />
+  <meta property="og:description" content="MCA Graduate | Full-Stack Web Developer | Python, Django, React" />
+  <meta property="og:type" content="website" />
+
+  <title>Shivani Dasari | Full-Stack Developer</title>
+
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==========================================
+       CUSTOM CURSOR
+  ========================================== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- ==========================================
+       NAVIGATION BAR
+  ========================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Shivani<span class="logo-dot">.</span>dev<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="Dasari_Shivani_Resume.pdf" download class="nav-btn">
+            <i class="fas fa-download"></i> Resume
+          </a>
+        </li>
+      </ul>
+
+      <!-- Hamburger Menu (Mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO SECTION
+  ========================================== -->
+  <section class="hero" id="home">
+    <!-- Animated background particles -->
+    <div class="hero-bg">
+      <div class="grid-lines"></div>
+    </div>
+
+    <div class="hero-content reveal">
+      <p class="hero-greeting">👋 Hello, World! I'm</p>
+      <h1 class="hero-name">Dasari Shivani</h1>
+
+      <!-- Typing animation container -->
+      <div class="hero-typing">
+        <span class="static-text">I'm a </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+
+      <p class="hero-description">
+        MCA Graduate building modern, responsive web applications with Python, Django, React & JavaScript. 
+        Passionate about clean code and delightful user experiences.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-code"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i> Let's Connect
+        </a>
+      </div>
+
+      <!-- Social Links -->
+      <div class="hero-socials">
+        <a href="https://linkedin.com/in/shivani-dasari" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/ShivaniDasari156" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:shivanidasari494@gmail.com" class="social-icon" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Visual / Avatar -->
+    <div class="hero-visual reveal">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <span class="avatar-initials">SD</span>
+        </div>
+        <!-- Orbiting tech icons -->
+        <div class="orbit orbit-1">
+          <div class="orbit-icon"><i class="fab fa-python"></i></div>
+        </div>
+        <div class="orbit orbit-2">
+          <div class="orbit-icon"><i class="fab fa-react"></i></div>
+        </div>
+        <div class="orbit orbit-3">
+          <div class="orbit-icon"><i class="fab fa-js-square"></i></div>
+        </div>
+        <div class="orbit orbit-4">
+          <div class="orbit-icon"><i class="fab fa-html5"></i></div>
+        </div>
+      </div>
+
+      <!-- Floating stat cards -->
+      <div class="stat-card stat-card-1">
+        <span class="stat-num">2+</span>
+        <span class="stat-label">Internships</span>
+      </div>
+      <div class="stat-card stat-card-2">
+        <span class="stat-num">3+</span>
+        <span class="stat-label">Projects</span>
+      </div>
+    </div>
+
+    <!-- Scroll down indicator -->
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </a>
+  </section>
+
+  <!-- ==========================================
+       ABOUT SECTION
+  ========================================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// 01. about</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- About Text -->
+        <div class="about-text reveal">
+          <p class="about-lead">
+            Results-driven <strong>MCA graduate (2026)</strong> with hands-on experience in full-stack web development.
+          </p>
+          <p>
+            I've completed two industry internships and delivered multiple real-world projects using Python, Django, JavaScript, React, HTML5/CSS3, and REST APIs. I love building responsive, cross-browser-compatible web applications with clean, well-structured code.
+          </p>
+          <p>
+            Currently pursuing my MCA at Kakatiya University, Warangal, and eager to contribute to a dynamic software engineering team as a Software Developer or Frontend Developer.
+          </p>
+
+          <!-- Info Cards -->
+          <div class="info-grid">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">Karimnagar, Telangana</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <span class="info-label">Degree</span>
+                <span class="info-value">MCA (Expected 2026)</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <span class="info-label">Experience</span>
+                <span class="info-value">2 Internships</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-code"></i>
+              <div>
+                <span class="info-label">Focus</span>
+                <span class="info-value">Full-Stack Development</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="Dasari_Shivani_Resume.pdf" download class="btn btn-primary">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+
+        <!-- About Visual -->
+        <div class="about-visual reveal">
+          <div class="code-card">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="code-file">shivani.json</span>
+            </div>
+            <div class="code-body">
+              <pre><code><span class="c-bracket">{</span>
+  <span class="c-key">"name"</span>: <span class="c-str">"Dasari Shivani"</span>,
+  <span class="c-key">"role"</span>: <span class="c-str">"Full-Stack Developer"</span>,
+  <span class="c-key">"education"</span>: <span class="c-str">"MCA @ Kakatiya Univ"</span>,
+  <span class="c-key">"languages"</span>: <span class="c-bracket">[</span>
+    <span class="c-str">"Python"</span>, <span class="c-str">"JavaScript"</span>, <span class="c-str">"C"</span>
+  <span class="c-bracket">]</span>,
+  <span class="c-key">"frameworks"</span>: <span class="c-bracket">[</span>
+    <span class="c-str">"Django"</span>, <span class="c-str">"React"</span>, <span class="c-str">"Flask"</span>
+  <span class="c-bracket">]</span>,
+  <span class="c-key">"available"</span>: <span class="c-bool">true</span>,
+  <span class="c-key">"openToWork"</span>: <span class="c-bool">true</span>
+<span class="c-bracket">}</span></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SKILLS SECTION
+  ========================================== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// 02. skills</span>
+        <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+      </div>
+
+      <!-- Skill Category Cards -->
+      <div class="skills-grid">
+
+        <!-- Languages -->
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap"><i class="fas fa-terminal"></i></div>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript (ES6+)</span>
+            <span class="tag">C</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Python</span><span>85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>JavaScript</span><span>80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>C</span><span>65%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Technologies -->
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap"><i class="fas fa-globe"></i></div>
+            <h3>Web Technologies</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Bootstrap 5</span>
+            <span class="tag">jQuery</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Responsive Design</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>HTML5 / CSS3</span><span>90%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Bootstrap 5</span><span>85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>REST APIs</span><span>75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks & Tools -->
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap"><i class="fas fa-layer-group"></i></div>
+            <h3>Frameworks & Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Django</span>
+            <span class="tag">Flask</span>
+            <span class="tag">React.js</span>
+            <span class="tag">Node.js</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Django</span><span>80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>React.js</span><span>70%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Flask / Node.js</span><span>65%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap"><i class="fas fa-database"></i></div>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">MySQL</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MongoDB</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>MySQL</span><span>80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>PostgreSQL</span><span>75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>MongoDB</span><span>60%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dev Tools -->
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap"><i class="fas fa-tools"></i></div>
+            <h3>Dev Tools & Practices</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">GitHub Pages</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">SDLC</span>
+            <span class="tag">Debugging</span>
+            <span class="tag">Agile</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Git / GitHub</span><span>85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Debugging</span><span>80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap"><i class="fas fa-users"></i></div>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Problem-Solving</span>
+            <span class="tag">Team Collaboration</span>
+            <span class="tag">Quick Learner</span>
+            <span class="tag">Attention to Detail</span>
+            <span class="tag">Time Management</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       EXPERIENCE SECTION
+  ========================================== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// 03. experience</span>
+        <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Internship 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Web Developer Intern</h3>
+                <p class="timeline-company"><i class="fas fa-building"></i> Dynamite WEBTECH</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date"><i class="fas fa-calendar"></i> Mar 2025 – Apr 2025</span>
+                <span class="timeline-location"><i class="fas fa-wifi"></i> Remote</span>
+              </div>
+            </div>
+            <ul class="timeline-points">
+              <li>Developed 5+ responsive, mobile-first web pages using HTML5, CSS3, Bootstrap 5, and JavaScript, improving client website usability with cross-browser compatibility.</li>
+              <li>Implemented UI enhancements and interactive components using jQuery, reducing page load friction.</li>
+              <li>Deployed production-ready projects via GitHub Pages, demonstrating proficiency in version control workflows.</li>
+            </ul>
+            <div class="timeline-tech">
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3</span>
+              <span class="tech-pill">Bootstrap 5</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">jQuery</span>
+              <span class="tech-pill">GitHub Pages</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Internship 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Web Development Intern</h3>
+                <p class="timeline-company"><i class="fas fa-building"></i> Orision Technologies</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date"><i class="fas fa-calendar"></i> Aug 2024 – Sep 2024</span>
+                <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Karimnagar, Telangana</span>
+              </div>
+            </div>
+            <ul class="timeline-points">
+              <li>Collaborated with a 4-member development team to build and enhance responsive web pages, contributing to 3 production features.</li>
+              <li>Developed back-end modules in Python and Django, including user authentication and database handling.</li>
+              <li>Participated in Agile sprint cycles including daily stand-ups, code reviews, and debugging sessions.</li>
+              <li>Utilized Git and GitHub for version control, managing pull requests and maintaining code quality.</li>
+            </ul>
+            <div class="timeline-tech">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Django</span>
+              <span class="tech-pill">HTML</span>
+              <span class="tech-pill">CSS</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">Git</span>
+              <span class="tech-pill">Agile</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PROJECTS SECTION
+  ========================================== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// 04. projects</span>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Portfolio -->
+        <div class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-user-circle"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/ShivaniDasari156" target="_blank" rel="noopener" class="project-link" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="project-link" title="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Personal Portfolio Website</h3>
+          <p class="project-desc">
+            Designed and developed a fully responsive personal portfolio to showcase projects, skills, and contact information. Deployed on GitHub Pages with consistent cross-browser rendering.
+          </p>
+          <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status live"><i class="fas fa-circle"></i> Live</span>
+          </div>
+        </div>
+
+        <!-- Project 2: Blog App -->
+        <div class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-blog"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/ShivaniDasari156" target="_blank" rel="noopener" class="project-link" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Blog Application</h3>
+          <p class="project-desc">
+            Full-stack blog platform with user authentication (login/register/logout), CRUD operations for posts, and a relational MySQL database. Integrated Django ORM for efficient querying and Bootstrap for responsive UI.
+          </p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Django</span>
+            <span>MySQL</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status featured"><i class="fas fa-star"></i> Featured</span>
+          </div>
+        </div>
+
+        <!-- Project 3: To-Do App -->
+        <div class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-tasks"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/ShivaniDasari156" target="_blank" rel="noopener" class="project-link" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="project-link" title="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">To-Do List Application</h3>
+          <p class="project-desc">
+            Task management web app featuring real-time task creation, editing, deletion, and status toggling using Django REST APIs and vanilla JavaScript. PostgreSQL for persistent data storage.
+          </p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Django</span>
+            <span>JavaScript</span>
+            <span>PostgreSQL</span>
+            <span>REST API</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status live"><i class="fas fa-circle"></i> Live</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- GitHub CTA -->
+      <div class="projects-cta reveal">
+        <a href="https://github.com/ShivaniDasari156" target="_blank" rel="noopener" class="btn btn-outline">
+          <i class="fab fa-github"></i> View All on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       EDUCATION SECTION
+  ========================================== -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// 05. education</span>
+        <h2 class="section-title">My <span class="accent">Education</span></h2>
+      </div>
+
+      <div class="edu-timeline">
+
+        <!-- MCA -->
+        <div class="edu-card reveal">
+          <div class="edu-year-badge">2026</div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div class="edu-icon"><i class="fas fa-university"></i></div>
+              <div>
+                <h3 class="edu-degree">Master of Computer Applications (MCA)</h3>
+                <p class="edu-institution">Kakatiya University, Warangal</p>
+                <span class="edu-period">Nov 2024 – Aug 2026 (Expected)</span>
+              </div>
+            </div>
+            <div class="edu-courses">
+              <h4>Relevant Coursework</h4>
+              <div class="course-tags">
+                <span>Data Structures</span>
+                <span>Web Technologies</span>
+                <span>Python Programming</span>
+                <span>Database Systems</span>
+                <span>Object-Oriented Programming</span>
+                <span>Software Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BSc CS -->
+        <div class="edu-card reveal">
+          <div class="edu-year-badge">2024</div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div>
+                <h3 class="edu-degree">Bachelor of Science in Computer Science (B.Sc. CS)</h3>
+                <p class="edu-institution">Vageshwari Degree and PG College, Karimnagar</p>
+                <span class="edu-period">Nov 2021 – Aug 2024</span>
+              </div>
+            </div>
+            <div class="edu-courses">
+              <h4>Relevant Coursework</h4>
+              <div class="course-tags">
+                <span>Mathematics</span>
+                <span>Computer Networks</span>
+                <span>Operating Systems</span>
+                <span>C Programming</span>
+                <span>Database Management Systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT SECTION
+  ========================================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// 06. contact</span>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+        <p class="section-subtitle">I'm currently open to new opportunities. Whether you have a question, a project idea, or just want to say hi — my inbox is always open!</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info Cards -->
+        <div class="contact-cards reveal">
+          <a href="mailto:shivanidasari494@gmail.com" class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="contact-card-label">Email</p>
+              <p class="contact-card-value">shivanidasari494@gmail.com</p>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/shivani-dasari" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-card-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <p class="contact-card-label">LinkedIn</p>
+              <p class="contact-card-value">linkedin.com/in/shivani-dasari</p>
+            </div>
+          </a>
+          <a href="https://github.com/ShivaniDasari156" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-card-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <p class="contact-card-label">GitHub</p>
+              <p class="contact-card-value">github.com/ShivaniDasari156</p>
+            </div>
+          </a>
+          <div class="contact-card no-link">
+            <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <p class="contact-card-label">Phone</p>
+              <p class="contact-card-value">+91 9652731072</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal">
+          <div class="form-card">
+            <h3>Send a Message</h3>
+            <div class="form-group">
+              <input type="text" id="contactName" placeholder="Your Name" class="form-input" />
+              <label for="contactName">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="contactEmail" placeholder="Your Email" class="form-input" />
+              <label for="contactEmail">Your Email</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="contactSubject" placeholder="Subject" class="form-input" />
+              <label for="contactSubject">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="contactMessage" placeholder="Your Message" class="form-input form-textarea" rows="4"></textarea>
+              <label for="contactMessage">Your Message</label>
+            </div>
+            <button class="btn btn-primary btn-full" onclick="sendEmail()">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+  ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>Shivani<span class="logo-dot">.</span>dev<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-tagline">Building the web, one line at a time. ✨</p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/shivani-dasari" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/ShivaniDasari156" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:shivanidasari494@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="footer-copy">© 2026 Dasari Shivani. Crafted with <i class="fas fa-heart" style="color:var(--accent)"></i> & lots of <i class="fas fa-coffee" style="color:var(--accent)"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
